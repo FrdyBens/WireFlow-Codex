@@ -1,0 +1,7 @@
+sku,name,description,unit,price,vendor,category
+CAB-TE-2P5,PVC Twin & Earth Cable,2.5mm twin and earth,m,1.25,Generic,Cable
+DEV-SOCKET-13A,Socket Outlet 13A,Single gang switched socket,ea,5.40,Generic,Accessories
+DEV-LIGHT-LED,LED Ceiling Light,12W flush ceiling light,ea,18.00,Generic,Luminaires
+DEV-BKR-10A,MCB 10A,10A SP MCB,ea,6.50,Generic,Protection
+DEV-BKR-32A,MCB 32A,32A SP MCB,ea,7.50,Generic,Protection
+DEV-DB-8W,Distribution Board 8W,8-way surface DB,ea,45.00,Generic,Panels

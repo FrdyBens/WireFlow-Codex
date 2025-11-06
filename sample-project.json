@@ -1,0 +1,23 @@
+{
+  "id": "project-demo",
+  "name": "Demo Villa",
+  "description": "Sample villa layout with lighting, socket, and cooker circuits.",
+  "walls": [
+    { "id": "wall-ext", "thickness": 8, "points": [[0, 0], [1200, 0], [1200, 800], [0, 800]] }
+  ],
+  "devices": [
+    { "id": "db-main", "name": "Main DB", "type": "distribution_board", "position": { "x": 80, "y": 120 } },
+    { "id": "light-foyer", "name": "Foyer Light", "type": "light", "circuitId": "ckt-light", "position": { "x": 300, "y": 160 }, "loadVA": 120 },
+    { "id": "socket-lounge", "name": "Lounge Socket", "type": "socket", "circuitId": "ckt-ring", "position": { "x": 600, "y": 400 }, "loadVA": 900 },
+    { "id": "cooker", "name": "Cooker Outlet", "type": "cooker", "circuitId": "ckt-cooker", "position": { "x": 950, "y": 500 }, "loadVA": 5000 }
+  ],
+  "panels": [
+    { "id": "panel-main", "name": "Service Panel", "mainBreakerRating": 80, "supplyVoltage": 230, "position": { "x": 80, "y": 120 } }
+  ],
+  "circuits": [
+    { "id": "ckt-light", "name": "Lighting", "panelId": "panel-main", "breakerType": "MCB", "breakerRating": 10, "maxLoadVA": 2500, "voltageDropLimit": 3, "rulePreset": "IEC" },
+    { "id": "ckt-ring", "name": "Ring Sockets", "panelId": "panel-main", "breakerType": "MCB", "breakerRating": 32, "maxLoadVA": 7000, "voltageDropLimit": 5, "rulePreset": "BS1363" },
+    { "id": "ckt-cooker", "name": "Cooker", "panelId": "panel-main", "breakerType": "MCB", "breakerRating": 40, "maxLoadVA": 7200, "voltageDropLimit": 5, "rulePreset": "IEC" }
+  ],
+  "routing": { "segments": [] }
+}
