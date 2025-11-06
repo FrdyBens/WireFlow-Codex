@@ -1,0 +1,45 @@
+{
+  "name": "wireflow-codex",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && tsc -p server/tsconfig.json",
+    "lint": "eslint . --ext .ts,.tsx",
+    "server": "ts-node-dev --project server/tsconfig.json server/index.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "axios": "^1.6.2",
+    "dexie": "^3.2.4",
+    "express": "^4.19.2",
+    "jsdom": "^24.0.0",
+    "konva": "^9.3.6",
+    "pdfkit": "^0.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-konva": "^18.2.4",
+    "zustand": "^4.4.6",
+    "nanoid": "^4.0.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.17",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-konva": "^18.2.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prisma": "^5.12.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "@types/cors": "^2.8.17",
+    "@types/multer": "^1.4.7",
+    "@types/pdfkit": "^0.12.11"
+  }
+}
