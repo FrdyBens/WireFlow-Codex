@@ -1,0 +1,47 @@
+{
+  "id": "demo-project",
+  "name": "Demo Residence",
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z",
+  "walls": [
+    { "id": "wall-1", "points": [120, 120, 620, 120] },
+    { "id": "wall-2", "points": [620, 120, 620, 420] },
+    { "id": "wall-3", "points": [620, 420, 120, 420] },
+    { "id": "wall-4", "points": [120, 420, 120, 120] }
+  ],
+  "devices": [
+    { "id": "device-1", "type": "socket", "position": { "x": 180, "y": 160 }, "circuitId": "circuit-1", "loadW": 250 },
+    { "id": "device-2", "type": "light", "position": { "x": 400, "y": 200 }, "circuitId": "circuit-2", "loadW": 60 },
+    { "id": "device-3", "type": "switch", "position": { "x": 200, "y": 300 }, "circuitId": "circuit-2", "loadW": 5 }
+  ],
+  "circuits": [
+    {
+      "id": "circuit-1",
+      "name": "Ring Main",
+      "breakerType": "MCB",
+      "breakerSizeA": 32,
+      "voltage": 230,
+      "maxLoadW": 7200,
+      "devices": ["device-1"]
+    },
+    {
+      "id": "circuit-2",
+      "name": "Lighting",
+      "breakerType": "MCB",
+      "breakerSizeA": 10,
+      "voltage": 230,
+      "maxLoadW": 1500,
+      "devices": ["device-2", "device-3"]
+    }
+  ],
+  "routes": [],
+  "deviceDefaults": {
+    "socket": 250,
+    "light": 60,
+    "switch": 5,
+    "water_heater": 3000,
+    "cooker": 6000,
+    "ac": 1200,
+    "data": 10
+  }
+}

@@ -1,0 +1,10 @@
+sku,name,description,unit,price,vendor,category
+CAB3C1.5,T&E Cable 3C 1.5mm2,"Twin & Earth cable for lighting circuits",meter,1.2,CableCo,Cables
+CAB2C2.5,T&E Cable 2C 2.5mm2,"Twin & Earth cable for ring circuits",meter,1.5,CableCo,Cables
+CON20PVC,PVC Conduit 20mm,"20mm rigid PVC conduit",length,2.4,PipeWorld,Conduit
+TRUNK40X40,Trunking 40x40,"Plastic trunking for surface runs",length,3.1,PipeWorld,Conduit
+BRKMCB10A,MCB 10A,"Single pole miniature circuit breaker",each,8.5,Protectix,Breakers
+BRKMCB32A,MCB 32A,"Single pole miniature circuit breaker",each,9.5,Protectix,Breakers
+BOXDB12,Distribution Board 12W,"12-way distribution board",each,65,PanelPlus,Panels
+SW1G,1G Switch,"Single gang light switch",each,2.3,SwitchGear,Devices
+SOCK2G,13A Socket,"13A double socket outlet",each,4.1,SocketHub,Devices
