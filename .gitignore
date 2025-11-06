@@ -1,0 +1,11 @@
+node_modules
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+dist
+frontend/dist
+server/dist
+.prisma
+database.sqlite
+pricing.db
+.DS_Store

@@ -1,0 +1,18 @@
+{
+  "name": "wireflow-codex",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "frontend",
+    "server"
+  ],
+  "scripts": {
+    "build": "npm run build -w frontend && npm run build -w server",
+    "dev": "npm run dev -w frontend",
+    "dev:server": "npm run dev -w server",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
