@@ -1,0 +1,10 @@
+sku,name,description,unit,price,vendor,category
+CAB-TE-25,PVC Twin & Earth 2.5mm²,General purpose 2-core + earth cable,m,2.85,CableCo,Cabling
+COND-20,PVC Conduit 20mm,Medium duty conduit,m,1.25,Containment Inc,Containment
+SOCK-13A,socket,13A twin switched socket,ea,9.5,ElectroMart,Devices
+LIGHT-LED,light,12W LED downlight,ea,7.8,LumaLight,Devices
+SW-1G,switch,1-gang light switch,ea,4.1,Switches Ltd,Devices
+WH-30L,water-heater,30L electric heater,ea,145,HotWaterPro,Devices
+COOK-45A,cooker,45A cooker outlet,ea,28.5,CookTech,Devices
+AC-SPLIT,ac,Split AC indoor unit point,ea,215,ClimateWorks,Devices
+DATA-CAT6,data,CAT6 data outlet,ea,12.4,DataPlus,Devices

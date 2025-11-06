@@ -1,0 +1,43 @@
+{
+  "name": "Sample Apartment",
+  "walls": [
+    { "id": "w1", "points": [80, 80, 480, 80] },
+    { "id": "w2", "points": [480, 80, 480, 360] },
+    { "id": "w3", "points": [480, 360, 80, 360] },
+    { "id": "w4", "points": [80, 360, 80, 80] }
+  ],
+  "devices": [
+    { "id": "d1", "type": "socket", "x": 140, "y": 120, "loadVA": 500 },
+    { "id": "d2", "type": "light", "x": 280, "y": 120, "loadVA": 100 },
+    { "id": "d3", "type": "switch", "x": 120, "y": 200, "loadVA": 10 }
+  ],
+  "circuits": [
+    {
+      "id": "c1",
+      "name": "Lighting",
+      "breakerType": "MCB",
+      "breakerRating": 10,
+      "voltageDrop": 1.2,
+      "length": 18,
+      "deviceIds": ["d2", "d3"]
+    },
+    {
+      "id": "c2",
+      "name": "Sockets",
+      "breakerType": "RCCB",
+      "breakerRating": 20,
+      "voltageDrop": 1.8,
+      "length": 24,
+      "deviceIds": ["d1"]
+    }
+  ],
+  "panels": [
+    {
+      "id": "p1",
+      "name": "Main DB",
+      "supplyVoltage": 230,
+      "maxDemandVA": 6500,
+      "circuitIds": ["c1", "c2"]
+    }
+  ]
+}
